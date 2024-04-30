@@ -63,3 +63,4 @@ Your task is to build a browser-based game utilizing HTML/CSS/JavaScript.
 - Plagiarism is a serious offense and grounds for immediate withdrawal.
 - You are encouraged to ask others, including students, instructors, and Stack Overflow for help. However, it is <b><i>not acceptable to copy</i></b> another persons code and submit it as your own. More importantly, it is detrimental to your learning and growth.
 - Small snippets of code that solve small problems taken from Stack Overflow are generally an exception to this rule. If you aren't sure, it is your responsibility to <b><i>ask your instructor</i></b>. To be on the safe side, we ask that you credit the person/resource you got the code from in a comment, and let an instructor take a look at it.
+- AI language models such as ChatGPT should only ever be used as a learning tool, if they are even used at all. Code lifted directly from one of these sources <i>can be</i> considered plagiarism.
