@@ -23,7 +23,7 @@ Your task is to build a browser-based game utilizing HTML/CSS/JavaScript.
 - A wireframe of your main game page
 - Pseudocode for the overall game play
 
-### **Project _Approval_ Due Date:** 5/5/23 by 9:00AM EST
+### **Project _Approval_ Due Date:** 5/2/24 by 9:00AM
 
 
 ## Project Requirements (MVP)
@@ -38,10 +38,10 @@ Your task is to build a browser-based game utilizing HTML/CSS/JavaScript.
 - Your code should be properly indented, spaced, and within code blocks. **DO NOT** leave in commented out code that was left unused (bad practice). Comments, if in your code at all, should be in your code to describe what your functions are doing.
 - Display proper use of global variables and function parameters (function scopes)
 - Use camelCase for JavaScript variables
-- Be deployed on [Surge](https://surge.sh/) (We will cover this on Monday of project week)
+- Be deployed on [Surge](https://surge.sh/) (We will cover this on Tuesday of project week)
 - Remove console.logs before deploying
 
-### **Project _Completed_ Due Date:** 5/12/23 by 1:30PM EST
+### **Project _Completed_ Due Date:** 5/9/24 by 9:00AM
 
 ## Tips
 
