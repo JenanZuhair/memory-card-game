@@ -23,7 +23,7 @@ startButton.onclick = function() {
 
     expectedImageIndex = generateRandomIndex(images.length);
     const randomImage = images[expectedImageIndex];
-    expectedCard.innerHTML = `<img src="${randomImage}" alt="Expected Card">`;
+    expectedCard.innerHTML = `<img src="/imag/hidden_card.png" alt="Hidden Card"><img src="${randomImage}" alt="Expected Card" class="hidden">`;
 };
 
 function generateRandomIndex(max) {
