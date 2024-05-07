@@ -32,15 +32,18 @@ function generateRandomIndex(max) {
 
 function checkGuess(clickedImage) {
     const clickedImageIndex = Array.from(clickedImage.parentNode.children).indexOf(clickedImage);
-
     if (clickedImageIndex === expectedImageIndex) {
         resultMessage.textContent = "Congratulations! You won!";
+        expectedCard.innerHTML = `<img src="${clickedImage.src}" alt="Guessed Card">`; // استبدل الصورة المخفية بالصورة الصحيحة المختارة
     } else {
         resultMessage.textContent = "Oops! You lost. Try again!";
     }
+    
     clearInterval(timerInterval); 
     timerDisplay.textContent = ""; 
 }
+
+
 function startTimer() {
     let secondsLeft = 5;
     timerInterval = setInterval(() => {
