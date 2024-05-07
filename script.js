@@ -5,10 +5,10 @@ const resultMessage = document.getElementById("resultMessage");
 const timerDisplay = document.getElementById("timer");
 
 const images = [
-    "/imag/sun_flower.jpg",
-    "/imag/Hibiscus.jpg",
-    "/imag/Zinnia.jpg",
-    "/imag/Tulip.jpg"
+   {path:"/imag/sun_flower.jpg",hint:"This is a flower known as the flower that never dies"},
+    {path:"/imag/Hibiscus.jpg", hint:"It is used as a medicinal herb in many folk cultures"},
+    {path:"/imag/Zinnia.jpg",hint:"One of the most common flowers in gardens"},
+    {path:"/imag/Tulip.jpg",hint:"One of the most famous flowers in the world, expressing beauty, elegance and rare availability"},
 ];
 
 let attempts = 0;
@@ -23,8 +23,12 @@ startButton.onclick = function() {
 
     expectedImageIndex = generateRandomIndex(images.length);
     const randomImage = images[expectedImageIndex];
-    expectedCard.innerHTML = `<img src="/imag/hidden_card.png" alt="Hidden Card"><img src="${randomImage}" alt="Expected Card" class="hidden">`;
+    expectedCard.innerHTML = `
+        <img src="${randomImage.path}" alt="Expected Card">
+        <p>${randomImage.hint}</p>
+    `;
 };
+
 
 function generateRandomIndex(max) {
     return Math.floor(Math.random() * max);
