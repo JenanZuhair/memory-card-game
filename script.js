@@ -41,3 +41,15 @@ function checkGuess(clickedImage) {
     clearInterval(timerInterval); 
     timerDisplay.textContent = ""; 
 }
+function startTimer() {
+    let secondsLeft = 5;
+    timerInterval = setInterval(() => {
+        if (secondsLeft > 0) {
+            timerDisplay.textContent = `Time left: ${secondsLeft} seconds`;
+            secondsLeft--;
+        } else {
+            clearInterval(timerInterval);
+            timerDisplay.textContent = "Time's up! You lost.";
+        }
+    }, 1000);
+}
