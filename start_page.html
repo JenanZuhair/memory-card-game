@@ -11,16 +11,21 @@
         <div id="user_name">
             <h1>Enter your user name</h1>
             <input type="text" id="username">
-            
             <a href="guess_card.html"><button type="button" onclick="save_userName()">Start Game</button></a>
-        </div>
+               
 
         <br> <br>
         
-        <button type="button">change background color</button>
+        <button type="button"id="color">select bacground clore</button>
         <br> <br>
-        <button type="submit">Dark mood</button>
-        <script src="script.js"></script>
+        <button type="submit"id="darkMode">Dark mood</button>
+        <script src="script2.js"></script>
     </div>
+    <script>
+    function saveColor() {
+        var bgColor = document.getElementById("bgColorInput").value;
+        localStorage.setItem("bgColor", bgColor);
+    }
+    </script>
 </body>
 </html>

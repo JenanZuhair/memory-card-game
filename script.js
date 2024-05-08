@@ -1,8 +1,3 @@
-function save_userName() {
-    var username = document.getElementById("username").value;
-    localStorage.setItem("username", username);
-    window.location.href = "guess_card.html"; // توجيه المستخدم إلى صفحة guess_card.html
-}
 
 const startButton = document.getElementById("startButton");
 const attemptCount = document.getElementById("attemptCount");
@@ -22,6 +17,7 @@ let expectedImageIndex;
 let timerInterval;
 
 startButton.onclick = function() {
+
     attempts++;
     attemptCount.textContent = "Attempt: " + attempts;
     resultMessage.textContent = "";
