@@ -30,6 +30,13 @@
         <img src="/imag/Zinnia.jpg" onclick="checkGuess(this)">
         <img src="/imag/Tulip.jpg" onclick="checkGuess(this)">
     </div>
+    <script>
+       
+        var bgColor = localStorage.getItem("bgColor");
+        if (bgColor) {
+            document.body.style.backgroundColor = bgColor; // Apply saved color to background
+        }
+    </script>
    <script src="script.js"></script>
     
 </body>
