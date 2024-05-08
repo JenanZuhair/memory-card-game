@@ -13,6 +13,12 @@
         <h2 id="attemptCount">Attempt: 0</h2>
         <h3 id="resultMessage"></h3>
         <h4 id="timer"></h4>
+        <h5 id="welcomeMessage"></h5>
+
+        <script>
+            var username = localStorage.getItem("username");
+            document.getElementById("welcomeMessage").innerHTML = "Welcome, " + username;
+        </script>
         <button id="startButton" type="button">Start game</button>
     </header>
     <div id="expected_card">
