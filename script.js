@@ -4,7 +4,7 @@ const expectedCard = document.getElementById("expected_card");
 const resultMessage = document.getElementById("resultMessage");
 const timerDisplay = document.getElementById("timer");
 
-// تحقق من وضع الدارك مود وتطبيقه
+//  وضع الدارك مود وتطبيقه
 const darkmode = localStorage.getItem("darkmode");
 if (darkmode === "true") {
     document.body.classList.add("dark-mode");
@@ -31,7 +31,7 @@ startButton.onclick = function () {
         attempts = 0; // إعادة تعيين عدد المحاولات إلى الصفر
         attemptCount.textContent = "Attempt: " + attempts;
         resultMessage.textContent = "You have reached the maximum attempts."; // طباعة رسالة الوصول للحد الأعلى
-        return; // الخروج من الدالة لعدم تنفيذ باقي الشيفرة
+        return; // الخروج من الدالة 
     }
 
     attempts++;
@@ -69,7 +69,7 @@ function checkGuess(clickedImage) {
     clearInterval(timerInterval);
     timerDisplay.textContent = "";
     if (clickedImageIndex === expectedImageIndex) {
-        handleWin(); // إذا كان اللاعب فاز، قم
+        handleWin(); // إذا كان اللاعب فاز،
     
 }
 }

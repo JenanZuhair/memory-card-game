@@ -1,14 +1,13 @@
 # Card reveal game
 
-## Date: 1/5/2024
+## Date: 9/5/2024
 
 ### By: jenan zuhair
 
 
 
 ### ***Description***
-####  The team leader must reveal the identity of the card as soon as any of his team members touches it. If they guess correctly they can then continue playing until they decide to stop or choose the wrong card. The turn then goes to the opposing team with a clue to guess.
- The first team to contact all of its secret agents wins the game
+####  Random cards. When play begins, a card is randomly chosen from among the cards. Then the player must guess the chosen card through the prompts. The player can choose the preferred lighting color of the screen and can enter his name, and a greeting with his name is printed. The player must guess the chosen energy three seconds ahead. After three seconds, he loses the game and has to start a new attempt. He can use only three attempts, and when he wins, the screen changes to several colors
 ***
 
 ### ***Technologies Used***
@@ -19,8 +18,7 @@
 
 ### ***Getting Started***
 
-##### The game begins with there being a leader who guesses to choose the correct card, 
-then the rest of the heads guess which card is the correct card.
+##### The game starts when you press the start play button and choose a random card.
 
 ***
 
