@@ -12,33 +12,41 @@
         <h1>Guess the card</h1>
         <h2 id="attemptCount">Attempt: 0</h2>
         <h3 id="resultMessage"></h3>
-        <h4 id="timer"></h4>
+        <h1 id="timer"></h1>
         <h1 id="welcomeMessage"></h1>
-
+        <h1 id="expected_card"></h1>
+        
+          
+        
+            </div>
+            
+    
+        </div>
+        
         <script>
             var username = localStorage.getItem("username");
             document.getElementById("welcomeMessage").innerHTML = "Welcome, " + username;
         </script>
         <button id="startButton" type="button">Start game</button>
     </header>
-    <div id="expected_card">
-        <h1>Image select</h1>
+
+    <div id="expected_card_container">
+        <div id="expected_card">
+            <img id="image-won" style="display:none" src="" alt="Expected Card">
+            <p id="hintText"></p>
+        </div>
     </div>
+   
     <div id="Guessed_cards">
         <img src="/imag/sun_flower.jpg" onclick="checkGuess(this)">
         <img src="/imag/Hibiscus.jpg" onclick="checkGuess(this)">
         <img src="/imag/Zinnia.jpg" onclick="checkGuess(this)">
         <img src="/imag/Tulip.jpg" onclick="checkGuess(this)">
     </div>
-    <script>
-       
-        var bgColor = localStorage.getItem("bgColor");
-        if (bgColor) {
-            document.body.style.backgroundColor = bgColor; // Apply saved color to background
-        }
-    </script>
+
+    
    <script src="script.js"></script>
+   <!-- <script src="script2.js"></script> -->
     
 </body>
 </html>
-

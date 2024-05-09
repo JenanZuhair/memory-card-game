@@ -5,6 +5,7 @@
 img{
     width: 200px;
     height: 200px;
+    align-items: center;
 }
 body{
     text-align: center;
@@ -35,4 +36,14 @@ body.dark-mode {
     background-color: #333333; 
     color: #ffffff; 
 }
-
+.hidden {
+    display: none;
+}
+#attemptCount{
+    text-align: right;
+    margin-right: 20px;
+}
+#welcomeMessage{
+    text-align: left;
+    margin-left:20px;
+}

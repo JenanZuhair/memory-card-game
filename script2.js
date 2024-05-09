@@ -1,3 +1,5 @@
+// let darkmode = false;
+
 function save_userName() {
     var username = document.getElementById("username").value;
     localStorage.setItem("username", username);
@@ -14,5 +16,15 @@ document.getElementById("color").addEventListener("click", function() {
     colorPicker.click();
 });
 document.getElementById("darkMode").addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode"); 
-});
+    const oldDarkmode = localStorage.getItem("darkmode") // true, false, undefined
+    
+    if (oldDarkmode === "true") {
+        localStorage.setItem("darkmode", false)
+        document.body.classList.remove("dark-mode");
+    }
+    else 
+    {
+        localStorage.setItem("darkmode", true)
+        document.body.classList.add("dark-mode");
+    } 
+})
